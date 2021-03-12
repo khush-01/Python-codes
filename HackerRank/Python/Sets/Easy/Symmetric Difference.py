@@ -1,0 +1,6 @@
+m = int(input())
+a = set(map(int, input().split()))
+n = int(input())
+b = set(map(int, input().split()))
+res = sorted(list(a.union(b).difference(a.intersection(b))))
+print(*res, sep="\n")
